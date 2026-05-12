@@ -91,7 +91,7 @@ const Navbar1 = ({
   return (
    <header
   className={cn(
-    "sticky top-0 z-50 w-full bg-white backdrop-blur",
+    "sticky top-0 z-50 w-full bg-secondary/10 backdrop-blur",
     className
   )}
 >
