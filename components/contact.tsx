@@ -51,7 +51,7 @@ ${form.message}
 
   return (
     <section className="py-20 lg:py-28">
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
         {/* HEADER */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h1 className="text-4xl font-bold md:text-5xl">

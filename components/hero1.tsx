@@ -32,7 +32,7 @@ const HeroCleaning = ({ className }: HeroCleaningProps) => {
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-secondary/30 blur-3xl" />
       </div>
 
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* LEFT CONTENT */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">

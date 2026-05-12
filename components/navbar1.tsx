@@ -91,11 +91,11 @@ const Navbar1 = ({
   return (
    <header
   className={cn(
-    "sticky top-0 z-50 w-full bg-secondary/10 backdrop-blur",
+    "sticky top-0 z-50 w-full bg-white backdrop-blur",
     className
   )}
 >
-  <div className="container flex h-24 items-center">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 flex h-24 items-center">
 
     {/* LEFT - LOGO */}
     <div className="flex flex-1 items-center">
@@ -105,7 +105,7 @@ const Navbar1 = ({
           width={250}
           height={120}
           priority
-          className="h-auto w-auto max-h-20 object-contain"
+          className="h-auto w-auto max-h-24 object-contain"
           alt={logo.alt}
         />
       </Link>

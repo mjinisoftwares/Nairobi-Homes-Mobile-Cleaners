@@ -34,7 +34,7 @@ const AboutSection = ({ className }: AboutSectionProps) => {
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-secondary/20 blur-3xl" />
       </div>
 
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* IMAGE SIDE */}
           <div className="relative order-2 lg:order-1">

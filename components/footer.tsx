@@ -22,7 +22,7 @@ interface FooterProps {
 const Footer = ({ className }: FooterProps) => {
   return (
     <footer className={cn("bg-secondary/10 border-t", className)}>
-      <div className="container py-16 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-16 ">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
           {/* BRAND */}
