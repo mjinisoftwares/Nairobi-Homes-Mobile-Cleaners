@@ -50,30 +50,31 @@ const HeroCleaning = ({ className }: HeroCleaningProps) => {
             </p>
 
             {/* BUTTONS */}
-            <div className="mt-10 flex w-full flex-col gap-4 sm:flex-row lg:w-auto">
-              <Button
-                asChild
-                size="lg"
-                className="h-12 bg-primary px-8 text-base text-primary-foreground hover:bg-primary/90"
-              >
-                <Link href="/contact">
-                  Get Free Quote
-                  <ArrowRight className="ml-2 size-5" />
-                </Link>
-              </Button>
+           {/* BUTTONS */}
+<div className="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:flex-row lg:w-auto lg:justify-start lg:items-start">
+  <Button
+    asChild
+    size="lg"
+    className="h-12 bg-primary px-8 text-base text-primary-foreground hover:bg-primary/90"
+  >
+    <Link href="/contact">
+      Get Free Quote
+      <ArrowRight className="ml-2 size-5" />
+    </Link>
+  </Button>
 
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="h-12 border-secondary bg-secondary/20 px-8 text-base hover:bg-secondary hover:text-secondary-foreground"
-              >
-                <Link href="tel:+254700000000">
-                  <PhoneCall className="mr-2 size-5" />
-                  Call Us Today
-                </Link>
-              </Button>
-            </div>
+  <Button
+    asChild
+    size="lg"
+    variant="outline"
+    className="h-12 border-secondary bg-secondary/20 px-8 text-base hover:bg-secondary hover:text-secondary-foreground"
+  >
+    <Link href="tel:+254700000000">
+      <PhoneCall className="mr-2 size-5" />
+      Call Us Today
+    </Link>
+  </Button>
+</div>
 
           </div>
 
