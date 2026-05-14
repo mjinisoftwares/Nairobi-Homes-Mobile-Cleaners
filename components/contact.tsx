@@ -78,7 +78,7 @@ ${form.message}
 
                 <div className="flex items-center gap-3">
                   <Mail className="text-primary" />
-                  <span>shibiramcdonald8@gmail.com</span>
+                  <span>nairobimobilecleaners@gmail.com</span>
                 </div>
 
                 <div className="flex items-center gap-3">
