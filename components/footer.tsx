@@ -11,8 +11,13 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaTiktok,
+} from "react-icons/fa";
 
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 interface FooterProps {
@@ -21,10 +26,10 @@ interface FooterProps {
 
 const Footer = ({ className }: FooterProps) => {
   return (
-    <footer className={cn("bg-secondary/10 border-t", className)}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-16 ">
+    <footer className={cn("border-t bg-secondary/10", className)}>
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-12 lg:px-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-
+          
           {/* BRAND */}
           <div>
             <Link href="/" className="flex items-center gap-2">
@@ -52,6 +57,36 @@ const Footer = ({ className }: FooterProps) => {
                 <ArrowRight className="ml-2 size-4" />
               </Link>
             </Button>
+
+            {/* SOCIAL ICONS */}
+            <div className="mt-6 flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/nairobihomecleaners"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border p-3 text-muted-foreground transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <FaInstagram className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://www.facebook.com/Nairobihomecleaner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border p-3 text-muted-foreground transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <FaFacebookF className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@nairobihomecleaners0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border p-3 text-muted-foreground transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <FaTiktok className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* SERVICES */}
@@ -79,21 +114,25 @@ const Footer = ({ className }: FooterProps) => {
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link href="/about" className="hover:text-primary">
                   About Us
                 </Link>
               </li>
+
               <li>
                 <Link href="/services" className="hover:text-primary">
                   Services
                 </Link>
               </li>
+
               <li>
                 <Link href="/projects" className="hover:text-primary">
                   Projects
                 </Link>
               </li>
+
               <li>
                 <Link href="/contact" className="hover:text-primary">
                   Contact
@@ -108,30 +147,31 @@ const Footer = ({ className }: FooterProps) => {
 
             <ul className="mt-5 space-y-4 text-sm text-muted-foreground">
               <li className="flex items-center gap-3">
-                <Phone className="text-primary size-4" />
+                <Phone className="size-4 text-primary" />
                 +254 718 601 976
               </li>
 
               <li className="flex items-center gap-3">
-                <Mail className="text-primary size-4" />
-                shibiramcdonald8@gmail.com
+                <Mail className="size-4 text-primary" />                
+            nairobimobilecleaners@gmail.com
               </li>
 
               <li className="flex items-center gap-3">
-                <MapPin className="text-primary size-4" />
+                <MapPin className="size-4 text-primary" />
                 Nairobi, Kenya
               </li>
 
               <li className="flex items-center gap-3">
-                <MessageCircle className="text-primary size-4" />
+                <MessageCircle className="size-4 text-primary" />
                 WhatsApp Available 24/7
               </li>
             </ul>
 
-            {/* WHATSAPP CTA */}
+            {/* WHATSAPP BUTTON */}
             <a
               href="https://wa.me/254718601976"
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
             >
               Chat on WhatsApp
@@ -141,7 +181,7 @@ const Footer = ({ className }: FooterProps) => {
         </div>
 
         {/* BOTTOM BAR */}
-        <div className="mt-14 border-t pt-6 text-center text-sm text-muted-foreground ">
+        <div className="mt-14 border-t pt-6 text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Nairobi Homes Mobile Cleaners. All rights reserved.
         </div>
       </div>
